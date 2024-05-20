@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Gonzalez - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Thomas Gonzalez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#foot">Contact</a></li>
+                <li class="nav-item">
+                    <button id="dark-mode-toggle" class="btn btn-secondary">Toggle Dark Mode</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="home-section">
+        <!-- Placeholder for a professional photo -->
+        <img src="img/thom.jpeg" alt="Thomas Gonzalez" class="profile-photo"> 
+        <div class="intro-text">
+            <h1>Hello, I'm Thomas Gonzalez</h1>
+            <p>Software developer with a passion for technology and innovation.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Throughout all of my life I have been captivated by technology. Ever since elementary school I have loved learning about how computers work and troubleshooting problems when they malfunctioned. I have recently graduated with a Computer Science and Cybersecurity degree from Elmhurst. During my time at Elmhurst I have developed a strong foundation in computer networking fundamentals, object-oriented programming concepts, C++, and more. I have also learned how to adapt to new programming languages and tools quickly.</p>
+            <p>As a driven learner, I am eager to expand my knowledge and apply my skills to real-world projects. I am excited about the prospect of collaborating with like-minded professionals to tackle complex problems and find innovative solutions. With my attention to detail and ability to work independently or as part of a team, I am confident that I can make a valuable contribution to any organization.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>P-ONE Calibration Data Tracking System</h3>
+                <p>Led a team of five to develop a database for tracking calibration data for neutrino detectors and an interface for the database. Utilized MongoDB, Flask, and Gunicorn. Deployed on an Ubuntu server.</p>
+            </div>
+            <div class="project">
+                <h3>System Design Document</h3>
+                <p>Authored a 50-page system design document for a student extracurricular activity management web application, detailing business and technical requirements, data models, and development strategy.</p>
+            </div>
+            <div class="project">
+                <h3>Professional Website</h3>
+                <p>Developed a professional website for myself, enhancing my HTML, CSS, and JavaScript skills.</p>
+            </div>
+            <div class="project">
+                <h3>Parser/Scanner</h3>
+                <p>Developed a scanner and recursive descent parser for SimplePL1 using C, enhancing my skills in language processing and compiler construction.</p>
+            </div>
+            <div class="project">
+                <h3>Registration Form Web Application</h3>
+                <p>Created a conference registration web application with data stored in a Microsoft SQL database, utilizing ASP.NET for application development and Bootstrap for formatting.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="foot">
+        <div class="container">
+            <h4> Contact Me </h4>
+            <br>
+            <p><a href="mailto:gonzalezthomas06@gmail.com"><img src="img/email.jpg" alt="gonzalezthomas06@gmail.com" class="email-photo"></a> &nbsp&nbsp<a href="https://www.linkedin.com/in/thomasjgonzalez06"><img src="img/linkedin.png" alt="https://www.linkedin.com/in/thomasjgonzalez06" class="linkedin-photo"> </a></p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
