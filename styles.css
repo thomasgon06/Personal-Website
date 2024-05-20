@@ -22,11 +22,15 @@ body {
 .email-photo {
     width: 45px;
     height: 45px;
+    margin: 0;
+    padding: 0;
 }
 
 .linkedin-photo {
     width: 35px;
     height: 35px;
+    margin: 0;
+    padding: 0;
 }
 .brand-photo {
     width: 45px;
@@ -44,7 +48,7 @@ body {
     margin-right: 5%;
 }
 
-@media (max-width: 480px) { /* Adjust the width as needed for different breakpoints */
+@media (max-width: 480px) { 
     .about-section, .projects-section, .contact-section, .projects-section {
         padding: 10px;
         margin-left: 5%;
@@ -52,9 +56,6 @@ body {
     }
 }
 
-#darkmodetog{
-    padding: 0px
-}
 .footer {
     padding: 20px 0;
     text-align: center;
@@ -69,8 +70,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.indented-paragraph{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
+a.btnop {
+    display: inline-block;
+    text-decoration: none;
+  }
