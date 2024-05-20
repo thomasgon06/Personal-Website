@@ -39,6 +39,14 @@ body {
     margin-right: 5%;
 }
 
+@media (max-width: 480px) { /* Adjust the width as needed for different breakpoints */
+    .about-section, .projects-section, .contact-section, .projects-section {
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 .footer {
     padding: 20px 0;
     text-align: center;
