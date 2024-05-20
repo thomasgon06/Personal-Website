@@ -20,8 +20,8 @@ body {
 }
 
 .email-photo {
-    width: 50px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
 }
 
 .linkedin-photo {
@@ -34,44 +34,27 @@ body {
 }
 
 .about-section, .projects-section, .contact-section {
-    padding: 50px 0;
+    padding: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .footer {
-    background: #f8f9fa;
     padding: 20px 0;
     text-align: center;
 }
 
 h2 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .project {
     margin-bottom: 20px;
 }
 
-/* Dark mode styles */
-body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+.indented-paragraph{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.navbar.dark-mode {
-    background-color: #1f1f1f;
-}
-
-.footer.dark-mode {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
-}
-
-.btn-dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-.btn-dark-mode:hover {
-    background-color: #555;
-    color: #fff;
-}

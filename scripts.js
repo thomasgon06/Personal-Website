@@ -11,12 +11,10 @@ $(document).ready(function() {
             });
         }
     });
-
-    // Dark mode toggle
-    $('#dark-mode-toggle').on('click', function() {
-        $('body').toggleClass('dark-mode');
-        $('.navbar').toggleClass('dark-mode');
-        $('.footer').toggleClass('dark-mode');
-        $(this).toggleClass('btn-dark-mode');
-    });
 });
+
+function toggle() {
+    var element = document.body;
+    element.dataset.bsTheme = 
+        element.dataset.bsTheme == "light" ? "dark" : "light";
+}

@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Thomas Gonzalez - Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Thomas Gonzalez</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#foot">Contact</a></li>
-                <li class="nav-item">
-                    <button id="dark-mode-toggle" class="btn btn-secondary">Toggle Dark Mode</button>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">&nbspThomas Gonzalez &nbsp<img src="img/darkmode.png" width="30" height="30" onclick="toggle()"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#foot">Contact</a></li> 
+                </ul>
+            </div>
         </div>
     </nav>
 
+
     <section id="home" class="home-section">
-        <!-- Placeholder for a professional photo -->
         <img src="img/thom.jpeg" alt="Thomas Gonzalez" class="profile-photo"> 
         <div class="intro-text">
             <h1>Hello, I'm Thomas Gonzalez</h1>
@@ -40,6 +38,7 @@
     <section id="about" class="about-section">
         <div class="container">
             <h2>About Me</h2>
+            <br>
             <p>Throughout all of my life I have been captivated by technology. Ever since elementary school I have loved learning about how computers work and troubleshooting problems when they malfunctioned. I have recently graduated with a Computer Science and Cybersecurity degree from Elmhurst. During my time at Elmhurst I have developed a strong foundation in computer networking fundamentals, object-oriented programming concepts, C++, and more. I have also learned how to adapt to new programming languages and tools quickly.</p>
             <p>As a driven learner, I am eager to expand my knowledge and apply my skills to real-world projects. I am excited about the prospect of collaborating with like-minded professionals to tackle complex problems and find innovative solutions. With my attention to detail and ability to work independently or as part of a team, I am confident that I can make a valuable contribution to any organization.</p>
         </div>
@@ -48,34 +47,65 @@
     <section id="projects" class="projects-section">
         <div class="container">
             <h2>Projects</h2>
+            <br>
+            
             <div class="project">
-                <h3>P-ONE Calibration Data Tracking System</h3>
-                <p>Led a team of five to develop a database for tracking calibration data for neutrino detectors and an interface for the database. Utilized MongoDB, Flask, and Gunicorn. Deployed on an Ubuntu server.</p>
+                <h3>P-ONE Calibration Data Tracking System </h3>
+                <ul>
+                    <li>Led a team of five in the development of a comprehensive database and user interface for tracking calibration data for neutrino detector sensors.</li>
+                    <li>Designed and implemented the technology stack, selecting MongoDB for the database, Flask for the web application framework, and Gunicorn for deploying the application on an Ubuntu server.</li>
+                    <li>Developed a MongoDB database and created a Flask application to query and manage the database.</li>
+                    <li>Created a Python interface for seamless access to the database.</li>
+                    <li>Deployed the solution on an Ubuntu server using Gunicorn, ensuring robust and reliable performance.</li>
+                    <li>Adopted AGILE development methodologies, facilitating iterative progress, flexibility, and continuous improvement.</li>
+                    <li>Collaborated closely with the client, conducting regular meetings to ensure alignment with their needs and presenting the final product for approval.</li>
+                    <li><a href="https://github.com/thomasgon06/WebAppPrototype">View Project</a></li>
+                </ul>
             </div>
             <div class="project">
                 <h3>System Design Document</h3>
-                <p>Authored a 50-page system design document for a student extracurricular activity management web application, detailing business and technical requirements, data models, and development strategy.</p>
-            </div>
-            <div class="project">
-                <h3>Professional Website</h3>
-                <p>Developed a professional website for myself, enhancing my HTML, CSS, and JavaScript skills.</p>
+                <ul>
+                    <li>Authored a 50-page system design document for a student extracurricular activity management web application, detailing business and technical requirements, data models, and development strategy.</li>
+                    <li><a href="https://drive.google.com/file/d/19jsDjxavLEwHMcKiisDw-gdi7GUp-61q/view">View Project</a></li>
+                </ul>
             </div>
             <div class="project">
                 <h3>Parser/Scanner</h3>
-                <p>Developed a scanner and recursive descent parser for SimplePL1 using C, enhancing my skills in language processing and compiler construction.</p>
+                <ul>
+                    <li>Developed a scanner and recursive descent parser for SimplePL1 using C, enhancing my skills in language processing and compiler construction.</li>
+                    <li><a href="https://gitfront.io/r/user-6609983/xoh5HBA2BTUV/Scanner-Parser/">View Project</a></li>
+                </ul>
             </div>
             <div class="project">
                 <h3>Registration Form Web Application</h3>
-                <p>Created a conference registration web application with data stored in a Microsoft SQL database, utilizing ASP.NET for application development and Bootstrap for formatting.</p>
+                <ul>
+                    <li>Created a conference registration web application with data stored in a Microsoft SQL database, utilizing ASP.NET for application development and Bootstrap for formatting.</li>
+                    <li><a href="https://gitfront.io/r/user-6609983/PLEcxpu841XB/Registration-Form/tree/RegistrationForm/">View Project</a></li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Mice Catching Game</h3>
+                <ul>
+                    <li>High-score based game developed with a group of people using C++ and Qt. The player
+                        character is a cat that attempts to catch mice and the mice are programmed to avoid the player</li>
+                    <li><a href="https://gitfront.io/r/user-6609983/n4Piq7EwSBKq/Colliding-Mice/">View Project</a></li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Shell</h3>
+                <ul>
+                    <li>Created a simple shell in C with several commands such as copy, move, and remove.</li>
+                    <li><a href="https://gitfront.io/r/thomgon1235/D4fRTJbcuNv9/shell/">View Project</a></li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <footer class="footer" id="foot">
+    <footer class="footer bg-body-tertiary" id="foot">
         <div class="container">
-            <h4> Contact Me </h4>
+            <h4> Connect With Me </h4>
             <br>
-            <p><a href="mailto:gonzalezthomas06@gmail.com"><img src="img/email.jpg" alt="gonzalezthomas06@gmail.com" class="email-photo"></a> &nbsp&nbsp<a href="https://www.linkedin.com/in/thomasjgonzalez06"><img src="img/linkedin.png" alt="https://www.linkedin.com/in/thomasjgonzalez06" class="linkedin-photo"> </a></p>
+            <p><a href="mailto:gonzalezthomas06@gmail.com"><img src="img/email.webp" alt="gonzalezthomas06@gmail.com" class="email-photo"></a> &nbsp&nbsp<a href="https://www.linkedin.com/in/thomasjgonzalez06"><img src="img/linkedin.png" alt="https://www.linkedin.com/in/thomasjgonzalez06" class="linkedin-photo"> </a></p>
         </div>
     </footer>
 
