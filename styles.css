@@ -28,6 +28,11 @@ body {
     width: 35px;
     height: 35px;
 }
+.brand-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
 
 .intro-text {
     margin-top: 20px;
@@ -47,6 +52,9 @@ body {
     }
 }
 
+#darkmodetog{
+    padding: 0px
+}
 .footer {
     padding: 20px 0;
     text-align: center;
